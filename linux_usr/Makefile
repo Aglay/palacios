@@ -144,7 +144,7 @@ v3_os_debug : v3_os_debug.c libv3_user_host_dev.a
 # Guarded module registration for GEARS
 #
 v3_register_gm: v3_register_gm.c libjson.a libv3_ctrl.a v3_ctrl.h
-	$(CC) $(CFLAGS) $< -L. -lm -lv3_ctrl -ljson -o $@
+	$(CC) $(CFLAGS) $< -L. -lv3_ctrl -ljson -lm -o $@
 
 #
 # User keyed stream support includes a library and examples
